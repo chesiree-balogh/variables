@@ -14,15 +14,26 @@ namespace variables
 
       var today = "2/10/20";
 
-      Console.WriteLine(numberOfCupsOfCoffee + " " + fullName + " " + today);
+      Console.WriteLine("Hi! My name is " + fullName + ". I'm running on " +
+      numberOfCupsOfCoffee + " cup of coffee. Today is: " + today);
+
+
 
       Console.WriteLine("what is your name?");
       var user = Console.ReadLine();
-      Console.WriteLine("hello: " + user);
 
-      Console.WriteLine("pick a number");
+      if (user == "Alice")
+      {
+        Console.WriteLine("How was Wonderland Alice?");
+      }
+      else
+      {
+        Console.WriteLine("Nice to meet you " + user);
+      }
+
+      Console.WriteLine("Let pick two numbers... first choice?");
       var operand1 = double.Parse(Console.ReadLine());
-      Console.WriteLine("Pick a second number");
+      Console.WriteLine("Perfect! Lets pick a second number!");
       var operand2 = double.Parse(Console.ReadLine());
 
       var sum = operand1 + operand2;
@@ -31,11 +42,11 @@ namespace variables
       var product = operand1 * operand2;
       var remainder = operand1 % operand2;
 
-      Console.WriteLine("the sum of your two numbers is " + sum);
-      Console.WriteLine("the difference of your two numbers is " + difference);
-      Console.WriteLine("the quotient of your two numbers is " + quotient);
-      Console.WriteLine("the product of your two numbers is " + product);
-      Console.WriteLine("the remainder of your two numbers is " + remainder);
+      Console.WriteLine("when we add your two numbers together we get: " + sum);
+      Console.WriteLine("When we subtract your two numbers from each other its:  " + difference);
+      Console.WriteLine("If we divide your numbers, we get: " + quotient);
+      Console.WriteLine("When we multiply your numbers together we get: " + product);
+      Console.WriteLine("The remainder of the two numbers when divided is: " + remainder);
 
 
 
